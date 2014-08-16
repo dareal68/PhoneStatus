@@ -18,23 +18,7 @@ void window_load(Window *window)
 {
     //Window's creation elements
     
-    struct tm *t;
-    time_t temp;
-    temp = time(NULL);
-    t = localtime(&temp);
-    tick_handler(t, MINUTE_UNIT);
     
-    text_layer = text_layer_create(GRect(0, 53, 132, 168));
-    text_layer_set_background_color(text_layer, GColorClear);
-    text_layer_set_text_color(text_layer, GColorBlack);
-    text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
-    text_layer_set_font(text_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
-    
-    layer_add_child(window_get_root_layer(window), text_layer_get_layer(text_layer));
-    // text_layer_set_text(text_layer, "Anything you want, as long as it is in quotes!");  <<<< inutile pour afficher l'heure
-    
-    inv_layer = inverter_layer_create(GRect (0, 50, 144, 62));
-    layer_add_child(window_get_root_layer(window), (Layer*) inv_layer);
 }
 
 void window_unload(Window *window)
@@ -53,6 +37,23 @@ void init()
     window_stack_push(window, true);
     
     tick_timer_service_subscribe(MINUTE_UNIT, (TickHandler) tick_handler);
+    struct tm *t;
+    time_t temp;
+    temp = time(NULL);
+    t = localtime(&temp);
+    tick_handler(t, MINUTE_UNIT);
+    
+    text_layer = text_layer_create(GRect(0, 53, 132, 168));
+    text_layer_set_background_color(text_layer, GColorClear);
+    text_layer_set_text_color(text_layer, GColorBlack);
+    text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
+    text_layer_set_font(text_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
+    
+    layer_add_child(window_get_root_layer(window), text_layer_get_layer(text_layer));
+    // text_layer_set_text(text_layer, "Anything you want, as long as it is in quotes!");   inutile pour afficher l'heure
+    
+    inv_layer = inverter_layer_create(GRect (0, 50, 144, 62));
+    layer_add_child(window_get_root_layer(window), (Layer*) inv_layer);
 }
 
 void deinit()
