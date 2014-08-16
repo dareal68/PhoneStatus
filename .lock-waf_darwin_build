@@ -1,0 +1,8 @@
+argv = ['/Users/denice/pebble-dev/PebbleSDK-2.4.1/Pebble/waf', 'configure', 'build']
+environ = {'_': '/Users/denice/pebble-dev/PebbleSDK-2.4.1/Pebble/waf', 'TERM_SESSION_ID': '7C44DB97-ACAC-4560-9B5C-D821F8C9F5F5', 'SSH_AUTH_SOCK': '/tmp/launch-RkVsaf/Listeners', 'PYTHONPATH': '/Users/denice/pebble-dev/PebbleSDK-current/bin/../.env/lib/python2.7/site-packages', 'VERSIONER_PYTHON_PREFER_32_BIT': 'no', 'TERM_PROGRAM_VERSION': '326', 'SHELL': '/bin/bash', 'LOGNAME': 'denice', 'USER': 'denice', 'HOME': '/Users/denice', 'PATH': '/Users/denice/pebble-dev/PebbleSDK-2.4.1/arm-cs-tools/bin:/Users/denice/pebble-dev/PebbleSDK-current/bin:/usr/local/sbin:/Users/denice/pebble-dev/PebbleSDK-current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin', 'TMPDIR': '/var/folders/qk/r2x9k9pj0dn06sl_0gh_qv_r0000gp/T/', 'TERM_PROGRAM': 'Apple_Terminal', 'LANG': 'fr_BE.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-ImeiMA/Render', 'VERSIONER_PYTHON_VERSION': '2.7', 'SHLVL': '2', 'SECURITYSESSIONID': '186a5', '__CF_USER_TEXT_ENCODING': '0x1F6:0:91\n', 'PWD': '/Users/denice/Sources/PhoneStatus', 'PEBBLE_BTID': '00:17:EC:19:20:9D', '__CHECKFIX1436934': '1', 'PEBBLE_PHONE': '192.168.0.101'}
+files = ['/Users/denice/Sources/PhoneStatus/wscript']
+hash = 4672844372416070989
+options = {'files': '', 'jobs': 8, 'verbose': 0, 'nocache': False, 'progress_bar': 0, 'timestamp': None, 'distcheck_args': None, 'top': '', 'destdir': '', 'keep': 0, 'zones': '', 'debug': False, 'prefix': '/usr/local/', 'download': False, 'force': False, 'targets': '', 'out': ''}
+out_dir = '/Users/denice/Sources/PhoneStatus/build'
+run_dir = '/Users/denice/Sources/PhoneStatus'
+top_dir = '/Users/denice/Sources/PhoneStatus'
