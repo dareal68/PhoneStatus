@@ -1,17 +1,21 @@
 {
-  "uuid": "c5b363d1-726d-404a-ba74-34949dd281ef",
-  "shortName": "PhoneStatus",
-  "longName": "PhoneStatus",
-  "companyName": "MakeAwesomeHappen",
-  "versionCode": 1,
-  "versionLabel": "1.0.0",
-  "watchapp": {
-    "watchface": true
-  },
-  "appKeys": {
-    "dummy": 0
-  },
-  "resources": {
-    "media": []
-  }
+    "appKeys": {
+        "dummy": 0
+    },
+    "capabilities": [
+        ""
+    ],
+    "companyName": "MakeAwesomeHappen",
+    "longName": "PhoneStatus",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "shortName": "PhoneStatus",
+    "uuid": "c5b363d1-726d-404a-ba74-34949dd281ef",
+    "versionCode": 1,
+    "versionLabel": "1.0.0",
+    "watchapp": {
+        "watchface": true
+    }
 }

@@ -5,7 +5,7 @@ char buffer[] = "00:00";
 Window *window;
 
 TextLayer *text_layer;
-//InverterLayer *inv_layer;
+InverterLayer *inv_layer;
 
 void tick_handler(struct tm *tick_time, TimeUnits units_changed)
 {
@@ -33,15 +33,15 @@ void window_load(Window *window)
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(text_layer));
     // text_layer_set_text(text_layer, "Anything you want, as long as it is in quotes!");  <<<< inutile pour afficher l'heure
     
-    //inv_layer = inverter_layer_create(GRect (0, 50, 144, 62));
-    //layer_add_child(window_get_root_layer(window), (Layer*) inv_layer);
+    inv_layer = inverter_layer_create(GRect (0, 50, 144, 62));
+    layer_add_child(window_get_root_layer(window), (Layer*) inv_layer);
 }
 
 void window_unload(Window *window)
 {
     //Window's destroy elements
     text_layer_destroy(text_layer);
-    //inverter_layer_destroy(inv_layer);
+    inverter_layer_destroy(inv_layer);
 }
 
 void init()
