@@ -34,7 +34,7 @@ void window_load(Window *window)
     // text_layer_set_text(text_layer, "Anything you want, as long as it is in quotes!");  <<<< inutile pour afficher l'heure
     
     inv_layer = inverter_layer_create(GRect (0, 50, 144, 62));
-    layer_add_child(window_get_root_layer(window), Layer* inv_layer);
+    layer_add_child(window_get_root_layer(window), (Layer*) inv_layer);
 }
 
 void window_unload(Window *window)
